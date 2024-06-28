@@ -1,0 +1,1 @@
+ALTER TABLE `projectes` ADD `project_categorie` text NOT NULL;

@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProjectFormRoutes = void 0;
+const express_1 = require("express");
+const projectFromController_1 = require("../controllers/projectFromController");
+const router = (0, express_1.Router)();
+exports.ProjectFormRoutes = router;
+router.post("/submit", projectFromController_1.uploadMiddleware, projectFromController_1.createProjectPost);
+router.get("/projects", projectFromController_1.getProjects);
+router.delete("/projects/:id", projectFromController_1.deleteProject);

@@ -1,0 +1,1 @@
+-- ALTER TABLE `images_projects` ADD CONSTRAINT 'images_projects_id_projectes_id_fk' FOREIGN KEY (`id`) REFERENCES `projectes`(`id`) ON UPDATE no action ON DELETE CASCADE
